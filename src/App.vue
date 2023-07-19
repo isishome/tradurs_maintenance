@@ -14,11 +14,13 @@ locale.value = lang as string
     <q-card class="card">
       <q-card-section class="card-top">
         <div class="row justify-center items-end" :class="$q.screen.gt.sm ? 'q-gutter-xl' : 'q-gutter-sm'">
-          <div class="row justify-center items-center q-gutter-sm">
+          <div class="row justify-center items-center q-gutter-x-sm">
             <img class="logo" src="/images/tradurs_logo.svg" :width="$q.screen.gt.sm ? 48 : 24" />
             <img class="letter" src="/images/tradurs_text.svg" :height="$q.screen.gt.sm ? 40 : 20" />
           </div>
-          <div class="text-center" :class="$q.screen.gt.sm ? 'text-h5' : 'text-subtitle1'">{{ t('notice.title') }}
+          <div class="text-center" :style="`line-height:${$q.screen.gt.sm ? '36px' : '20px'}`"
+            :class="$q.screen.gt.sm ? 'text-h5' : 'text-subtitle1'">{{
+              t('notice.title') }}
           </div>
         </div>
       </q-card-section>
