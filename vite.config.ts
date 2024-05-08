@@ -18,7 +18,6 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: './maintenance',
     emptyOutDir: true
   }
 })
