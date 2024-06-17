@@ -20,7 +20,7 @@ locale.value = lang as string
           </div>
           <div class="text-center" :style="`line-height:${$q.screen.gt.sm ? '36px' : '20px'}`"
             :class="$q.screen.gt.sm ? 'text-h5' : 'text-subtitle1'">{{
-              t('notice.title') }}
+          t('notice.title') }}
           </div>
         </div>
       </q-card-section>
@@ -28,7 +28,7 @@ locale.value = lang as string
       <q-card-section>
         <div class="q-pa-md column q-gutter-y-sm" :class="$q.screen.gt.sm ? 'text-body1' : 'text-body2'">
           <div class="text-area">{{ t('notice.top') }}</div>
-          <div class="text-area text-weight-bold text-amber-8">{{ t('notice.contents') }}</div>
+          <div class="text-area text-weight-bold">{{ t('notice.contents') }}</div>
           <div class="text-area">{{ t('notice.bottom') }}</div>
         </div>
       </q-card-section>
@@ -43,7 +43,7 @@ locale.value = lang as string
 }
 
 .card-top {
-  background: linear-gradient(152.92deg, #ffffff 0%, rgb(255, 160, 0) 93.95%);
+  background: linear-gradient(152.92deg, #eeeeee 0%, rgb(255, 192, 84) 93.95%);
 }
 
 .logo {
